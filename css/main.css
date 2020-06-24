@@ -40,6 +40,10 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -281,6 +285,9 @@ p {
 }
 
 .member.name {
+  padding-top: 30px;
+  margin-bottom: 10px;
+
   font-weight: 500;
   color: var(--title-color);
 }
@@ -379,6 +386,17 @@ p {
 /* footer ends */
 
 /* portfolio starts */
+.radio-buttons {
+  display: flex;
+  justify-content: center;
+
+  padding-top: 93px;
+  margin-bottom: 50px;
+}
+
+.radio-buttons li + li {
+  margin-left: 8px;
+}
 
 .portfolio-button {
   font-weight: 500;
@@ -387,11 +405,48 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
 
+  height: 38px;
+
+  border-radius: 4px;
   color: var(--title-color);
   background-color: #f5f4fa;
 }
 
+.button-name {
+  padding: 22px 6px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-bottom: 94px;
+}
+
+.projects li {
+  width: 370px;
+}
+
+.projects li + li {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.projects li:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.projects li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.label {
+  padding: 20px 24px;
+}
+
 .portfolio-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2em;
@@ -414,4 +469,5 @@ p {
   letter-spacing: 0.03em;
 
   color: var(--white-color);
+  background-color: var(--our-team-background);
 }
