@@ -284,6 +284,12 @@ button {
   display: flex;
 }
 
+.our-team-list > li {
+  background-color: var(--white-color);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
 .our-team-list li + li {
   margin-left: 30px;
 }
@@ -302,6 +308,10 @@ button {
 
   font-weight: 500;
   color: var(--title-color);
+}
+
+.member.job {
+  margin-bottom: 16px;
 }
 /* our-team ends */
 
