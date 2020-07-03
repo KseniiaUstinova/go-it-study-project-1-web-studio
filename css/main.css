@@ -123,7 +123,8 @@ img {
 }
 
 .link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 20px 0;
 
   color: var(--title-color);
@@ -135,6 +136,12 @@ img {
   margin-left: 30px;
 }
 
+.address-icon {
+  padding: 0;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
 .link.mail,
 .link.phone {
   color: var(--primary-text-color);
@@ -143,6 +150,11 @@ img {
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+}
+
+.link:hover .address-icon,
+.link:focus .address-icon {
+  fill: var(--accent-color);
 }
 
 .studio {
