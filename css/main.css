@@ -266,6 +266,18 @@ button {
   margin-left: 30px;
 }
 
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--our-team-background);
+  border-radius: 4px;
+}
+
 .advantages .item-title {
   margin-bottom: 10px;
 
