@@ -335,6 +335,38 @@ button {
   margin-left: 30px;
 }
 
+.social-net-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.social-net-list li + li {
+  margin-left: 10px;
+}
+
+.social-links {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  fill: #afb1b8;
+}
+
+.social-links:hover,
+.social-links:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.social-links:hover .social-icon,
+.social-links:focus .social-icon {
+  fill: var(--white-color);
+}
+
 .member {
   font-weight: 400;
   font-size: 16px;
@@ -416,6 +448,12 @@ button {
   text-align: left;
 
   color: var(--white-color);
+}
+
+.follow-us-links {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--white-color);
 }
 
 .mailing {
