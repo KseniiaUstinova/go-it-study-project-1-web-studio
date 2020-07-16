@@ -586,9 +586,13 @@ button {
 
 .projects li {
   width: 370px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
 
-.projects li + li {
+.projects li + li,
+.projects li:first-child {
   margin-left: 30px;
   margin-bottom: 30px;
 }
@@ -623,12 +627,36 @@ button {
   letter-spacing: 0.03em;
 }
 
+.projects-description {
+  display: block;
+
+  position: relative;
+}
+
 .description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56em;
   letter-spacing: 0.03em;
 
   color: var(--white-color);
-  background-color: var(--our-team-background);
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.projects li:hover,
+.projects li:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.projects li:hover .description,
+.projects li:focus .description {
+  opacity: 1;
 }
