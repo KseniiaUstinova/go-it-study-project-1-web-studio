@@ -586,9 +586,6 @@ button {
 
 .projects li {
   width: 370px;
-
-  background: #ffffff;
-  border: 1px solid #eeeeee;
 }
 
 .projects li + li,
@@ -607,6 +604,10 @@ button {
 
 .label {
   padding: 20px 24px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .portfolio-title {
@@ -628,26 +629,31 @@ button {
 }
 
 .projects-description {
-  display: block;
-
   position: relative;
 }
 
 .description {
+  display: inline-flex;
+  align-items: center;
+
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.description-text {
+  padding: 0 23px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56em;
   letter-spacing: 0.03em;
-
   color: var(--white-color);
-  background-color: rgba(33, 150, 243, 0.9);
-  opacity: 0;
 }
 
 .projects li:hover,
