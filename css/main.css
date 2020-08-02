@@ -245,6 +245,7 @@ button {
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--accent-color);
+  /* border: 1px solid var(--accent-color); */
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -541,11 +542,21 @@ button {
 }
 
 .input {
+  margin-right: 12px;
   width: 358px;
   height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
 
   background-color: transparent;
 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: var(--white-color);
+}
+
+.input::placeholder {
   font-size: 16px;
   line-height: 1.87em;
   letter-spacing: 0.03em;
